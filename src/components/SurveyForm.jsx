@@ -24,7 +24,7 @@ const SurveyForm = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-        const baseUrl = 'http://127.0.0.1:8080/'
+        const baseUrl = 'https://surveyform-backend-2n7e.onrender.com/'
         try {
             const response = await axios.post(baseUrl, formData)
             if(response.status === 200){
