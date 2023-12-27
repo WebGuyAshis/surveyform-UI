@@ -1,0 +1,13 @@
+.survey-container {
+  margin: auto;
+  width: 70%;
+  text-align: start;
+}
+.form-header {
+    text-align: justify;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
