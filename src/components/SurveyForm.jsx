@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios'
 import '../assets/css/surveyform.css'
 import { Select, Input } from 'antd';
+import Navbar from "./Navbar";
 
 
 const { TextArea } = Input;
@@ -208,8 +209,8 @@ const SurveyForm = () => {
     ];
     const [formData, setFormData] = useState({
         name: "",
-        gender: "Male",
-        nationality: "Indian",
+        gender: "",
+        nationality: "",
         email: "",
         phone: "",
         address: "",
@@ -245,6 +246,7 @@ const SurveyForm = () => {
 
     return (
         <div className="survey-container">
+            <Navbar/>
             <div className="form-header">
                 <h1>Learn the Skills needed for your next job.</h1>
                 <p>
